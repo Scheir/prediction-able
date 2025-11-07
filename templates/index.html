@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction-able - Hello World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Prediction-able</h1>
+        </header>
+        
+        <main>
+            <div class="greeting-box">
+                <h2 id="frontend-message">Hello World from the Frontend!</h2>
+                <button id="fetch-button" onclick="fetchBackendMessage()">
+                    Get Message from Backend
+                </button>
+                <div id="backend-message" class="backend-response"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>A Python Web Application with Frontend and Backend</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
